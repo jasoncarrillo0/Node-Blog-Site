@@ -1,0 +1,13 @@
+<%- include("partials/header") %> 
+
+<!-- All Content below this line is within a div class="container" -->
+<h1>Compose</h1>
+<form action="/compose" method="POST">
+    <p class="post-labels">Title</p>
+    <input class="compose-page-inputs" type="text" name="postHeading">
+    <p class="post-labels">Post</p>
+    <textarea class="compose-page-inputs" id="postBody" type="text" name="postBody"></textarea>
+    <input class="btn btn-dark" id="postSubmitBtn" type="submit" value="Publish" name="compositionSubmit">        
+</form>
+
+<%- include("partials/footer") %> 

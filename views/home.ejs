@@ -1,0 +1,14 @@
+<%- include("partials/header") %> 
+
+<!-- All Content below this line is within a div class="container" -->
+<h1><%=homeHeading%></h1>
+<p><%=homeBody%></p>
+<% for (let i = 3; i < posts.length; i++) {%>
+   <h2><%=posts[i].blog_heading%></h2>
+   <p>
+       <%=posts[i].blog_body.substring(0,99);%>...
+       <a href="/posts/<%=posts[i].blog_url%>">Read More</a>
+   </p>
+<%}%>
+
+<%- include("partials/footer") %> 
